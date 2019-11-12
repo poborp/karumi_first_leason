@@ -1,5 +1,4 @@
 language: swift
 osx_image: xcode11.2
-xcode_sdk: iphonesimulator13.0
 script:
-    - set -o pipefail && xcodebuild -project KarumiFirstLeason.xcodeproj -scheme KarumiFirstLeason -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.2,name=iPhone 11 Pro"  build test CODE_SIGN_IDENTITY=- | xcpretty
+    - set -o pipefail && xcodebuild -project KarumiFirstLeason.xcodeproj -scheme KarumiFirstLeason -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.2,name=iPhone 11 Pro" build test | xcpretty
