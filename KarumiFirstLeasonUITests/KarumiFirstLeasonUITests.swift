@@ -1,6 +1,6 @@
 //
-//  karumi_first_leasonUITests.swift
-//  karumi first leasonUITests
+//  KarumiFirstLeasonUITests.swift
+//  KarumiFirstLeasonUITests
 //
 //  Created by Jacobo Rodriguez on 12/11/19.
 //  Copyright © 2019 Jacobo Rodriguez. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class karumi_first_leasonUITests: XCTestCase {
+class KarumiFirstLeasonUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
