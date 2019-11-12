@@ -8,16 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EA0A98F1237AB6760045E662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A98F0237AB6760045E662 /* AppDelegate.swift */; };
-		EA0A98F3237AB6760045E662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A98F2237AB6760045E662 /* SceneDelegate.swift */; };
-		EA0A98F5237AB6760045E662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A98F4237AB6760045E662 /* ContentView.swift */; };
 		EA0A98F7237AB6770045E662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0A98F6237AB6770045E662 /* Assets.xcassets */; };
 		EA0A98FA237AB6770045E662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0A98F9237AB6770045E662 /* Preview Assets.xcassets */; };
 		EA0A98FD237AB6770045E662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0A98FB237AB6770045E662 /* LaunchScreen.storyboard */; };
-		EA0A9908237AB6780045E662 /* KarumiFirstLeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9907237AB6780045E662 /* KarumiFirstLeasonTests.swift */; };
 		EA0A9913237AB6780045E662 /* KarumiFirstLeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9912237AB6780045E662 /* KarumiFirstLeasonUITests.swift */; };
 		EA0A9923237AB7F20045E662 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA0A9922237AB7F20045E662 /* .travis.yml */; };
 		EA0A9925237ACB2C0045E662 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9924237ACB2C0045E662 /* StringCalculator.swift */; };
 		EA0A9927237ACB700045E662 /* StringCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */; };
+		EA0A9929237AED940045E662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9928237AED940045E662 /* LoginViewController.swift */; };
+		EA0A9933237AF97A0045E662 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9932237AF97A0045E662 /* Login.swift */; };
+		EA0A9935237AF9830045E662 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9934237AF9830045E662 /* Logout.swift */; };
+		EA0A9937237AFB030045E662 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9936237AFB030045E662 /* LoginTest.swift */; };
+		EA0A9939237AFB0A0045E662 /* LogoutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9938237AFB0A0045E662 /* LogoutTest.swift */; };
+		EA0A993B237AFFE00045E662 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993A237AFFE00045E662 /* Clock.swift */; };
+		EA0A993E237B0C1E0045E662 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993D237B0C1E0045E662 /* LoginPresenter.swift */; };
+		EA0A9940237B0C700045E662 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993F237B0C700045E662 /* LoginPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,21 +45,26 @@
 /* Begin PBXFileReference section */
 		EA0A98ED237AB6760045E662 /* KarumiFirstLeason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarumiFirstLeason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0A98F0237AB6760045E662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA0A98F2237AB6760045E662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA0A98F4237AB6760045E662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA0A98F6237AB6770045E662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0A98F9237AB6770045E662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA0A98FC237AB6770045E662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA0A98FE237AB6770045E662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0A9903237AB6780045E662 /* KarumiFirstLeasonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarumiFirstLeasonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0A9907237AB6780045E662 /* KarumiFirstLeasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiFirstLeasonTests.swift; sourceTree = "<group>"; };
 		EA0A9909237AB6780045E662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0A990E237AB6780045E662 /* KarumiFirstLeasonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarumiFirstLeasonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0A9912237AB6780045E662 /* KarumiFirstLeasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiFirstLeasonUITests.swift; sourceTree = "<group>"; };
 		EA0A9914237AB6780045E662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA0A9922237AB7F20045E662 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		EA0A9922237AB7F20045E662 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .travis.yml; path = KarumiFirstLeason/.travis.yml; sourceTree = SOURCE_ROOT; };
 		EA0A9924237ACB2C0045E662 /* StringCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
 		EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculatorTest.swift; sourceTree = "<group>"; };
+		EA0A9928237AED940045E662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA0A9932237AF97A0045E662 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EA0A9934237AF9830045E662 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		EA0A9936237AFB030045E662 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		EA0A9938237AFB0A0045E662 /* LogoutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutTest.swift; sourceTree = "<group>"; };
+		EA0A993A237AFFE00045E662 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		EA0A993D237B0C1E0045E662 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		EA0A993F237B0C700045E662 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +115,11 @@
 		EA0A98EF237AB6760045E662 /* KarumiFirstLeason */ = {
 			isa = PBXGroup;
 			children = (
-				EA0A98F0237AB6760045E662 /* AppDelegate.swift */,
-				EA0A98F2237AB6760045E662 /* SceneDelegate.swift */,
-				EA0A98F4237AB6760045E662 /* ContentView.swift */,
-				EA0A9924237ACB2C0045E662 /* StringCalculator.swift */,
-				EA0A98F6237AB6770045E662 /* Assets.xcassets */,
-				EA0A98FB237AB6770045E662 /* LaunchScreen.storyboard */,
-				EA0A98FE237AB6770045E662 /* Info.plist */,
-				EA0A9922237AB7F20045E662 /* .travis.yml */,
+				EA0A992E237AF9190045E662 /* App */,
+				EA0A992F237AF9490045E662 /* Core */,
+				EA0A9930237AF9540045E662 /* Scenes */,
+				EA0A992C237AF8EE0045E662 /* Resources */,
+				EA0A992D237AF9040045E662 /* SupportingFiles */,
 				EA0A98F8237AB6770045E662 /* Preview Content */,
 			);
 			path = KarumiFirstLeason;
@@ -129,9 +136,11 @@
 		EA0A9906237AB6780045E662 /* KarumiFirstLeasonTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA0A9907237AB6780045E662 /* KarumiFirstLeasonTests.swift */,
-				EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */,
 				EA0A9909237AB6780045E662 /* Info.plist */,
+				EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */,
+				EA0A9936237AFB030045E662 /* LoginTest.swift */,
+				EA0A9938237AFB0A0045E662 /* LogoutTest.swift */,
+				EA0A993F237B0C700045E662 /* LoginPresenterTest.swift */,
 			);
 			path = KarumiFirstLeasonTests;
 			sourceTree = "<group>";
@@ -143,6 +152,84 @@
 				EA0A9914237AB6780045E662 /* Info.plist */,
 			);
 			path = KarumiFirstLeasonUITests;
+			sourceTree = "<group>";
+		};
+		EA0A992A237AF8D50045E662 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A993D237B0C1E0045E662 /* LoginPresenter.swift */,
+				EA0A9928237AED940045E662 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EA0A992B237AF8E30045E662 /* StringCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A9924237ACB2C0045E662 /* StringCalculator.swift */,
+			);
+			path = StringCalculator;
+			sourceTree = "<group>";
+		};
+		EA0A992C237AF8EE0045E662 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A98F6237AB6770045E662 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA0A992D237AF9040045E662 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A98FB237AB6770045E662 /* LaunchScreen.storyboard */,
+				EA0A98FE237AB6770045E662 /* Info.plist */,
+				EA0A9922237AB7F20045E662 /* .travis.yml */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EA0A992E237AF9190045E662 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A98F0237AB6760045E662 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EA0A992F237AF9490045E662 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A993C237AFFE40045E662 /* Clock */,
+				EA0A9931237AF96E0045E662 /* Login */,
+				EA0A992B237AF8E30045E662 /* StringCalculator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA0A9930237AF9540045E662 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A992A237AF8D50045E662 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA0A9931237AF96E0045E662 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A9932237AF97A0045E662 /* Login.swift */,
+				EA0A9934237AF9830045E662 /* Logout.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EA0A993C237AFFE40045E662 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A993A237AFFE00045E662 /* Clock.swift */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +364,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0A993B237AFFE00045E662 /* Clock.swift in Sources */,
 				EA0A98F1237AB6760045E662 /* AppDelegate.swift in Sources */,
-				EA0A98F3237AB6760045E662 /* SceneDelegate.swift in Sources */,
+				EA0A993E237B0C1E0045E662 /* LoginPresenter.swift in Sources */,
 				EA0A9925237ACB2C0045E662 /* StringCalculator.swift in Sources */,
-				EA0A98F5237AB6760045E662 /* ContentView.swift in Sources */,
+				EA0A9929237AED940045E662 /* LoginViewController.swift in Sources */,
+				EA0A9935237AF9830045E662 /* Logout.swift in Sources */,
+				EA0A9933237AF97A0045E662 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0A9940237B0C700045E662 /* LoginPresenterTest.swift in Sources */,
+				EA0A9937237AFB030045E662 /* LoginTest.swift in Sources */,
+				EA0A9939237AFB0A0045E662 /* LogoutTest.swift in Sources */,
 				EA0A9927237ACB700045E662 /* StringCalculatorTest.swift in Sources */,
-				EA0A9908237AB6780045E662 /* KarumiFirstLeasonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
