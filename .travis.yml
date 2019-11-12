@@ -1,5 +1,6 @@
 language: swift
 osx_image: xcode11.2
-platform: iOS Simulator,OS=13.2,name=iPhone 11 Pro
+xcode_sdk: iphonesimulator13.0
+platform: iOS Simulator,OS=13.0,name=iPhone 11 Pro
 script:
     - xcodebuild -project KarumiFirstLeason.xcodeproj -scheme KarumiFirstLeason -sdk iphonesimulator build test
