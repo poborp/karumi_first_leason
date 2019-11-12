@@ -72,13 +72,32 @@ class StringCalculatorTest: XCTestCase {
         evaluateStringCalculator(input: "1,3\n4,5", expectedResult: 13)
     }
     
+    func testThrowErrorIfTheStringHasFourValuesWithBreakline() {
+        
+        evaluateErrorCalculator(input: "1,-3", expectedResult: 13, expectedError: StringCalculatorError.negativeNumber)
+    }
+    
     // MARK: - Private
     
     private func evaluateStringCalculator(input: String, expectedResult: Float) {
         
         let stringCalculator = StringCalculator()
-        let result = stringCalculator.add(number: input)
-        XCTAssertEqual(expectedResult, result)
+        
+        do {
+            let result = try stringCalculator.add(number: input)
+            XCTAssertEqual(expectedResult, result)
+        } catch {
+            XCTFail("Fail")
+        }
+    }
+    
+    private func evaluateErrorCalculator(input: String, expectedResult: Float, expectedError: StringCalculatorError) {
+        
+        let stringCalculator = StringCalculator()
+        
+        XCTAssertThrowsError(try stringCalculator.add(number: input), "some message") { (error) in
+            XCTAssertEqual(error as? StringCalculatorError, expectedError)
+        }
     }
 
 }
