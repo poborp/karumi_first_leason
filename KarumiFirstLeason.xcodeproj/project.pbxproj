@@ -16,6 +16,8 @@
 		EA0A9908237AB6780045E662 /* KarumiFirstLeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9907237AB6780045E662 /* KarumiFirstLeasonTests.swift */; };
 		EA0A9913237AB6780045E662 /* KarumiFirstLeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9912237AB6780045E662 /* KarumiFirstLeasonUITests.swift */; };
 		EA0A9923237AB7F20045E662 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA0A9922237AB7F20045E662 /* .travis.yml */; };
+		EA0A9925237ACB2C0045E662 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9924237ACB2C0045E662 /* StringCalculator.swift */; };
+		EA0A9927237ACB700045E662 /* StringCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		EA0A9912237AB6780045E662 /* KarumiFirstLeasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiFirstLeasonUITests.swift; sourceTree = "<group>"; };
 		EA0A9914237AB6780045E662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0A9922237AB7F20045E662 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		EA0A9924237ACB2C0045E662 /* StringCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
+		EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculatorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				EA0A98F0237AB6760045E662 /* AppDelegate.swift */,
 				EA0A98F2237AB6760045E662 /* SceneDelegate.swift */,
 				EA0A98F4237AB6760045E662 /* ContentView.swift */,
+				EA0A9924237ACB2C0045E662 /* StringCalculator.swift */,
 				EA0A98F6237AB6770045E662 /* Assets.xcassets */,
 				EA0A98FB237AB6770045E662 /* LaunchScreen.storyboard */,
 				EA0A98FE237AB6770045E662 /* Info.plist */,
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0A9907237AB6780045E662 /* KarumiFirstLeasonTests.swift */,
+				EA0A9926237ACB700045E662 /* StringCalculatorTest.swift */,
 				EA0A9909237AB6780045E662 /* Info.plist */,
 			);
 			path = KarumiFirstLeasonTests;
@@ -273,6 +279,7 @@
 			files = (
 				EA0A98F1237AB6760045E662 /* AppDelegate.swift in Sources */,
 				EA0A98F3237AB6760045E662 /* SceneDelegate.swift in Sources */,
+				EA0A9925237ACB2C0045E662 /* StringCalculator.swift in Sources */,
 				EA0A98F5237AB6760045E662 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0A9927237ACB700045E662 /* StringCalculatorTest.swift in Sources */,
 				EA0A9908237AB6780045E662 /* KarumiFirstLeasonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
