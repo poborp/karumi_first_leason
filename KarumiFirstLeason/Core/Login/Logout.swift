@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum LogoutError: Error {
+    case date
+}
+
 class Logout {
     
     private let clock: ClockProtocol
@@ -16,9 +20,19 @@ class Logout {
         self.clock = clock
     }
     
-    func logout() -> Bool {
+    func logout(completion: @escaping ((Result<Void, LogoutError>) -> Void)) {
         
-        return Int(clock.date().timeIntervalSince1970) % 2 == 0
+        DispatchQueue.global(qos: .background).async {
+            
+            DispatchQueue.main.async {
+                
+                if Int(self.clock.date().timeIntervalSince1970) % 2 == 0 {
+                    completion(.success(()))
+                } else {
+                    completion(.failure(.date))
+                }
+            }
+        }
     }
     
 }

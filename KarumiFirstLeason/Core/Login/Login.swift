@@ -8,14 +8,24 @@
 
 import Foundation
 
+enum LoginError: Error {
+    case error
+}
+
 class Login {
     
-    func login(user: String?, pass: String?) -> Bool {
+    func login(user: String?, pass: String?, completion: @escaping ((Result<Void, LoginError>) -> Void)) {
         
-        if user == "galicia", pass == "lloviendo" {
-            return true
-        } else {
-            return false
+        DispatchQueue.global(qos: .background).async {
+
+            DispatchQueue.main.async {
+                
+                if user == "galicia", pass == "lloviendo" {
+                    completion(.success(()))
+                } else {
+                    completion(.failure(.error))
+                }
+            }
         }
     }
     

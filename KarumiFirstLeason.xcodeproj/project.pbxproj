@@ -23,6 +23,12 @@
 		EA0A993B237AFFE00045E662 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993A237AFFE00045E662 /* Clock.swift */; };
 		EA0A993E237B0C1E0045E662 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993D237B0C1E0045E662 /* LoginPresenter.swift */; };
 		EA0A9940237B0C700045E662 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A993F237B0C700045E662 /* LoginPresenterTest.swift */; };
+		EA0A994D237B3B670045E662 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A9944237B3B4E0045E662 /* Nimble.framework */; };
+		EA0A994E237B3B670045E662 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A9942237B3B4E0045E662 /* OHHTTPStubs.framework */; };
+		EA0A9955237B3CA20045E662 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA0A9944237B3B4E0045E662 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA0A9956237B3CD00045E662 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA0A9942237B3B4E0045E662 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA0A9958237B3FE40045E662 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A9943237B3B4E0045E662 /* KIF.framework */; };
+		EA0A995A237B3FF90045E662 /* KIF.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA0A9943237B3B4E0045E662 /* KIF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,40 @@
 			remoteInfo = KarumiFirstLeason;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA0A994B237B3B4E0045E662 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0A9954237B3C9C0045E662 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA0A9956237B3CD00045E662 /* OHHTTPStubs.framework in CopyFiles */,
+				EA0A9955237B3CA20045E662 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0A9959237B3FF30045E662 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				EA0A995A237B3FF90045E662 /* KIF.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA0A98ED237AB6760045E662 /* KarumiFirstLeason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarumiFirstLeason.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +105,9 @@
 		EA0A993A237AFFE00045E662 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		EA0A993D237B0C1E0045E662 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		EA0A993F237B0C700045E662 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		EA0A9942237B3B4E0045E662 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		EA0A9943237B3B4E0045E662 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
+		EA0A9944237B3B4E0045E662 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0A994E237B3B670045E662 /* OHHTTPStubs.framework in Frameworks */,
+				EA0A994D237B3B670045E662 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0A9958237B3FE40045E662 /* KIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +145,7 @@
 				EA0A9906237AB6780045E662 /* KarumiFirstLeasonTests */,
 				EA0A9911237AB6780045E662 /* KarumiFirstLeasonUITests */,
 				EA0A98EE237AB6760045E662 /* Products */,
+				EA0A9941237B3B4E0045E662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +279,16 @@
 			path = Clock;
 			sourceTree = "<group>";
 		};
+		EA0A9941237B3B4E0045E662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A9943237B3B4E0045E662 /* KIF.framework */,
+				EA0A9944237B3B4E0045E662 /* Nimble.framework */,
+				EA0A9942237B3B4E0045E662 /* OHHTTPStubs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +299,7 @@
 				EA0A98E9237AB6760045E662 /* Sources */,
 				EA0A98EA237AB6760045E662 /* Frameworks */,
 				EA0A98EB237AB6760045E662 /* Resources */,
+				EA0A994B237B3B4E0045E662 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +317,7 @@
 				EA0A98FF237AB6780045E662 /* Sources */,
 				EA0A9900237AB6780045E662 /* Frameworks */,
 				EA0A9901237AB6780045E662 /* Resources */,
+				EA0A9954237B3C9C0045E662 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -277,6 +336,7 @@
 				EA0A990A237AB6780045E662 /* Sources */,
 				EA0A990B237AB6780045E662 /* Frameworks */,
 				EA0A990C237AB6780045E662 /* Resources */,
+				EA0A9959237B3FF30045E662 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -543,6 +603,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KarumiFirstLeason/Preview Content\"";
 				DEVELOPMENT_TEAM = XPD229X4WG;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeason/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,6 +629,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KarumiFirstLeason/Preview Content\"";
 				DEVELOPMENT_TEAM = XPD229X4WG;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeason/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,6 +653,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPD229X4WG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeasonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,6 +679,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPD229X4WG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeasonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,6 +704,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPD229X4WG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeasonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -648,6 +728,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPD229X4WG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KarumiFirstLeasonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

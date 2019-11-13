@@ -6,8 +6,9 @@
 //  Copyright © 2019 Jacobo Rodriguez. All rights reserved.
 //
 
-import XCTest
 @testable import KarumiFirstLeason
+import XCTest
+import Nimble
 
 class LoginPresenterTest: XCTestCase {
     
@@ -17,8 +18,8 @@ class LoginPresenterTest: XCTestCase {
         let presenter = LoginPresenter(loginInteractor: Login(), logoutInteractor: Logout(), view: view)
         presenter.login(user: "galicia", pass: "lloviendo")
         
-        XCTAssertEqual(true, view.hideLogInFormCalled)
-        XCTAssertEqual(true, view.showLogOutFormCalled)
+        expect(view.hideLogInFormCalled).toEventually(beTrue())
+        expect(view.showLogOutFormCalled).toEventually(beTrue())
     }
     
     func testLoginWithWrongCredentials() {
@@ -27,7 +28,7 @@ class LoginPresenterTest: XCTestCase {
         let presenter = LoginPresenter(loginInteractor: Login(), logoutInteractor: Logout(), view: view)
         presenter.login(user: "asdasd", pass: "asdasd")
         
-        XCTAssertEqual(true, view.showErrorCalled)
+        expect(view.showErrorCalled).toEventually(beTrue())
     }
     
     func testReturnTrueIfLogoutDateIsEven() {
@@ -36,9 +37,8 @@ class LoginPresenterTest: XCTestCase {
         let presenter = LoginPresenter(loginInteractor: Login(), logoutInteractor: Logout(clock: FixedTimeClock(timestamp: 1573570986)), view: view)
         presenter.logout()
         
-        XCTAssertEqual(true, view.hideLogOutFormCalled)
-        XCTAssertEqual(true, view.showLogInFormCalled)
-        XCTAssertEqual(false, view.showErrorCalled)
+        expect(view.hideLogOutFormCalled).toEventually(beTrue())
+        expect(view.showLogInFormCalled).toEventually(beTrue())
     }
     
     func testReturnErrorIfLogoutDateIsOdd() {
@@ -47,22 +47,12 @@ class LoginPresenterTest: XCTestCase {
         let presenter = LoginPresenter(loginInteractor: Login(), logoutInteractor: Logout(clock: FixedTimeClock(timestamp: 1573570987)), view: view)
         presenter.logout()
         
-        XCTAssertEqual(true, view.showErrorCalled)
-    }
-    
-    // MARK: - Private
-    
-    private func givenPresenter(loginInteractor: Login = Login(),
-                                logoutInteractor: Logout = Logout()) -> LoginPresenter {
-        
-        let view = MockLoginViewController()
-        let presenter = LoginPresenter(loginInteractor: loginInteractor, logoutInteractor: logoutInteractor, view: view)
-        return presenter
+        expect(view.showErrorCalled).toEventually(beTrue())
     }
     
 }
 
-class MockLoginViewController: LoginViewProtocol {
+private class MockLoginViewController: LoginViewProtocol {
     
     var hideLogInFormCalled: Bool = false
     var hideLogOutFormCalled: Bool = false

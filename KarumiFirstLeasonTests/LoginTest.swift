@@ -6,8 +6,9 @@
 //  Copyright © 2019 Jacobo Rodriguez. All rights reserved.
 //
 
-import XCTest
 @testable import KarumiFirstLeason
+import XCTest
+import Nimble
 
 class LoginTest: XCTestCase {
 
@@ -23,14 +24,36 @@ class LoginTest: XCTestCase {
     
     func testReturnFalseIfTheCredentialsAreWrong() {
         
-        let result = interactor.login(user: "asd", pass: "asda")
-        XCTAssertEqual(false, result)
+        let expectation = XCTestExpectation(description: "expectation")
+        
+        interactor.login(user: "asd", pass: "asda")  { (result) in
+            switch result {
+            case .success:
+                break
+            case .failure(let error):
+                XCTAssertEqual(LoginError.error, error)
+            }
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 2)
     }
     
     func testReturnTrueIfTheCredentialsAreCorrect() {
         
-        let result = interactor.login(user: "galicia", pass: "lloviendo")
-        XCTAssertEqual(true, result)
+        let expectation = XCTestExpectation(description: "expectation")
+        
+        interactor.login(user: "galicia", pass: "lloviendo") { (result) in
+            switch result {
+            case .success:
+                break
+            case .failure(_):
+                XCTFail()
+            }
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 2)
     }
 
 }

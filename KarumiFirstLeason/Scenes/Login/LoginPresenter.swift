@@ -31,21 +31,33 @@ class LoginPresenter {
     
     func login(user: String?, pass: String?) {
         
-        if loginInteractor.login(user: user, pass: pass) {
-            view.hideLogInForm()
-            view.showLogOutForm()
-        } else {
-            view.showError(message: "Name or password are wrong")
+        loginInteractor.login(user: user, pass: pass) { (result) in
+            switch result {
+            case .success:
+                self.view.hideLogInForm()
+                self.view.showLogOutForm()
+            case .failure(let error):
+                switch error {
+                case .error:
+                    self.view.showError(message: "Name or password are wrong")
+                }
+            }
         }
     }
     
     func logout() {
         
-        if logoutInteractor.logout() {
-            view.hideLogOutForm()
-            view.showLogInForm()
-        } else {
-            view.showError(message: "Not available for now")
+        logoutInteractor.logout { (result) in
+            switch result {
+            case .success:
+                self.view.hideLogOutForm()
+                self.view.showLogInForm()
+            case .failure(let error):
+                switch error {
+                case .date:
+                    self.view.showError(message: "Not available for now")
+                }
+            }
         }
     }
     
